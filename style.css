@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/***** Header BEGIN *****/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 17px;
+    padding-top: 41px;
+}
+
+.menu{
+    list-style: none;
+}
+.menu-item{
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+.menu-item-link{
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+}
+/***** END Header *****/
+
+
+
+/***** Button BEGIN *****/
+.button{
+    display: block;
+    max-width: 400px;
+    background-color: #eec14d;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 19px 50px;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+}
+/***** END Button *****/
+
+
+
+/***** Section BEGIN *****/
+.section-1{
+}
+.section-2{
+    display: block;
+    background-image: url("./assets/bg-section-2.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 60%;
+}
+.section-3{
+    background-image: url("./assets/bg-section-3.png");
+    background-repeat: no-repeat;
+    background-position: 0 150px;
+    background-size: cover;
+}
+/***** END Section *****/
+
+
+
+/***** Flex BEGIN *****/
+.flex{
+    display: flex;
+    min-height: 400px;
+}
+.flex div{
+    position: relative;
+    width: 50%;
+}
+.image-1, .image-2{
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.image-1{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 250px;
+    height: 250px;
+}
+.image-2{
+    position: absolute;
+    top: 120px;
+    right: 35%;
+    width: 168px;
+    height: 168px;
+}
+.text{
+    width: 80% !important;
+    margin-top: 17.5%;
+    color: rgba(44, 44, 44, 255);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+.text span{
+    color: #eec14d;
+}
+/***** END Flex *****/
+
+
+/***** Other BEGIN *****/
+.title {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 74px;
+    font-size: 23pt;
+    text-align: center;
+}
+.mainTitle {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 54px;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 35px;
+} 
+.text2{
+    font-size: 60px;
+    color: rgba(232, 232, 242, 255);
+    text-align: center;
+    font-weight: 900;
+}
+.text3{
+    font-size: 20pt;
+    color:  rgba(44, 44, 44, 255);
+    text-align: center;
+    margin-bottom: 80px;
+}
+.text3:after, .text3:before{
+    color: rgba(238, 191, 62, 255);
+}
+.text3:before{
+    content: "[";
+    margin-right: 10px;
+}
+.text3:after{
+    content: "]";
+    margin-left: 10px;
+}
+.hero{
+    display: flex;
+    margin-bottom: 40px;
+}
+.heroes{
+   width: 50%;
+}
+.heroes img{
+    float: left;
+    margin-right: 20px;
+}
+.heroes div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.heroes p{
+    font-size: 18px;
+    color: rgba(44, 44, 44, 255);
+    text-align: left;
+    margin-left: 27px;
+    margin-top: 12.5%;
+}
+.heroes h4{
+    font-size: 25pt;
+    color: rgba(237, 198, 90, 255);
+    text-align: left;
+    font-family: 'Marck Script', cursive;
+    margin-left: 27px;
+}
+.kids{
+    display: block;
+    margin: 0 auto;
+    margin-top: 38px;
+}
+/***** END Other *****/
+
+
+
+/***** Media BEGIN *****/
+@media screen and (min-width: 768px) {
+    .section1 {
+        height: 652px;
+    }
+    .list {
+        display: flex;
+    }
+    .title{
+        /*width: 436px;
+        height: 20px;*/
+    }
+}
+@media screen and (max-width: 768px) {
+    .mainTitle {
+        max-width: 100%;
+    }
+}
+/***** END Media *****/
